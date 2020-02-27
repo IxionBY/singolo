@@ -17,3 +17,15 @@
     font-family: 'Lato-Black';   
     src: url('fonts/Lato-Black.ttf');
 }
+
+body{
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.portfolio{
+    height: 870px;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+}
