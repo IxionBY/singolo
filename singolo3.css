@@ -169,6 +169,11 @@ form button:hover {
     color: #f0d8d9;
 }
 
+.contact a img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 footer{
     height: 76px;
     background-color: #2d303a;
