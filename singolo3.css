@@ -20,7 +20,7 @@
 
 body{
     width: 1020px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0px;
 }
 
@@ -199,4 +199,9 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     width: 152px;
+}
+
+.footer-social-media img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
