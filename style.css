@@ -108,51 +108,109 @@ a {
 
 .slider{
     height: 594px;
-    background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
-    width: 100%;
+    position: relative;
 }
 
 .container-slider{
-    width: 940px;
-    height: inherit;
+    overflow: hidden;
+    height: 594px;
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+}
+
+.slider-control-left{
+    position: absolute;
+    top: 280px;
+    left: 42px;
+    z-index: 2;
+}
+.slider-control-right{
+    position: absolute;
+    top: 280px;
+    left: 963px;
+    z-index: 2;
+}
+
+.slide-1{
+    background-color: #f06c64;
+    position: absolute;
+    height: 594px;
+    width: 1020px;
+    z-index: 1;
+}
+
+.slide-2{
+    position: absolute;
+    z-index: 1;
+}
+
+.move-from-left{
+    animation-name: bounce-2;
+    animation-timing-function: linear;
+    animation-duration: 0.5s; 
+    z-index: 2;
+}
+
+.move-from-right{
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+    animation-duration: 0.5s; 
+    z-index: 2;
+}
+
+@keyframes bounce-1 {
+    0%   { transform: translateX(+1020PX); }
+    100%  { transform: translateX(0); }
+}
+
+@keyframes bounce-2 {
+    0%   { transform: translateX(-1020PX); }
+    100%  { transform: translateX(0); }
+}
+
+.displayNone{
+    display: none;
+    visibility: hidden;
 }
 
 .left-iphone{
+    margin-top: 53px;
+    vertical-align: middle;
+    margin-left: 112px;
     position: absolute;
-    left: 72px;
-    bottom: 55px;
 }
 
 .right-iphone{
     position: absolute;
-    left: 385px;
-    bottom: 180px; 
+    vertical-align: middle;
+    margin-left: 425px;
+    margin-top: 174px;
 }
 
 .offscreen-left{
+    margin-top: 53px;
+    vertical-align: middle;
+    margin-left: 110px;
     position: absolute;
-    left: 70px;
-    bottom: 57px;
 }
 
 .offscreen-right{
     position: absolute;
-    left: 384px;
-    bottom: 180px;
+    vertical-align: middle;
+    margin-left: 424px;
+    margin-top: 174px;
 }
 
 .offscreen{
     display: none;
 }
 
-.slider-control:hover{
+.slider-control-left:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.slider-control-right:hover{
     cursor: pointer;
     transform: scale(1.5);
 }

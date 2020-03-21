@@ -9,6 +9,8 @@ const LEFT_IPHONE = document.querySelector(".left-iphone");
 const LEFT_OFFSCREEN = document.querySelector(".offscreen-left");
 const RIGHT_IPHONE = document.querySelector(".right-iphone");
 const RIGHT_OFFSCREEN = document.querySelector(".offscreen-right");
+const SLIDER_CONTROL_LEFT = document.querySelector('.slider-control-left');
+const SLIDER_CONTROL_RIGHT = document.querySelector('.slider-control-right');
 
 //navigation
 document.addEventListener('scroll', onScroll);
@@ -51,7 +53,7 @@ RIGHT_OFFSCREEN.addEventListener('click', function(){
     RIGHT_IPHONE.classList.remove('offscreen');
 });
 
-//post form
+//modal window
 BUTTON.addEventListener('click', (e) => {
     if (document.getElementById('name').checkValidity() && document.getElementById('email').checkValidity()) {
         e.preventDefault();
@@ -92,8 +94,9 @@ MENU_PORTFOLIO.addEventListener('click', (event) => {
         for(var i = 0; i  < Img.length; i++){
             if(i == Img.length-1 ){
                 Img[i].src = img0;
-            }
+            } else {
             Img[i].src = Img[i+1].src;
+            }
         }
 });
 
@@ -101,3 +104,36 @@ PORTFOLIO.addEventListener('click', (event) => {
     PORTFOLIO.querySelectorAll('img').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
 });
+
+
+//slider
+SLIDER_CONTROL_LEFT.addEventListener('click', onScrollLeft);
+SLIDER_CONTROL_RIGHT.addEventListener('click', onScrollRight);
+
+function onScrollLeft(event){
+    var noActiveElement = document.querySelector('.container-slider .displayNone');
+    var ActiveElement = document.querySelector('.container-slider .activeElement');
+    noActiveElement.classList.remove('displayNone');
+
+    noActiveElement.classList.add('move-from-left');
+
+    setTimeout(function(){
+    noActiveElement.classList.remove('move-from-left');
+    ActiveElement.classList.add('displayNone');
+    noActiveElement.classList.add('activeElement');
+    ActiveElement.classList.remove('activeElement')
+    },500)
+}
+
+function onScrollRight(event){
+    var noActiveElement = document.querySelector('.container-slider .displayNone');
+    var ActiveElement = document.querySelector('.container-slider .activeElement');
+    noActiveElement.classList.remove('displayNone');
+    noActiveElement.classList.add('move-from-right');
+    setTimeout(function(){
+    noActiveElement.classList.remove('move-from-right');
+    ActiveElement.classList.add('displayNone');
+    noActiveElement.classList.add('activeElement');
+    ActiveElement.classList.remove('activeElement')
+    },500)
+}
