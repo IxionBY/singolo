@@ -21,7 +21,7 @@
 @media screen and (min-width: 768px) and (max-width: 1019px){
     
     body{
-        width: 768px;
+        max-width: 1019px;
         margin: 0 auto;
         padding: 0px;
     }
@@ -43,19 +43,19 @@
         background-color: #2d303a;
         border-bottom: 6px solid #323746;
         color: #ffffff;
-        width: 768px;
+        max-width: 1019px;
         margin: auto;
     }
 
     .container-header{
-        width: 688px;
+        max-width: 90%;
         height: inherit;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         background-color: #2d303a;
         align-items: center;
-        margin: auto;
+        margin: 0 5%;
     }
 
     .logo{
@@ -108,12 +108,12 @@
     }
 
     #wraper{
-        width: 768px;
+        max-width: 1019px;
         margin: auto;
     }
 
     .slider{
-        width: 768px;
+        max-width: 1019px;
         height: 447px;
         border-bottom: 4px solid #ea676b;
         position: relative;
@@ -122,75 +122,77 @@
     .container-slider{
         overflow: hidden;
         height: 447px;
-        position: relative;
+        max-width: 1019px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .slider-control-left{
         position: absolute;
-        top: 216px;
-        left: 42px;
+        top: 50%;
+        left: 5%;
         z-index: 2;
     }
     .slider-control-right{
         position: absolute;
-        top: 216px;
-        left: 727px;
+        top: 50%;
+        left: 95%;
         z-index: 2;
     }
 
+    .slide1-content{
+        background-color: #f06c64;
+        width: 768px;
+        height: inherit;
+    }
+    
     .slide-1{
         background-color: #f06c64;
         position: absolute;
         height: 447px;
-        width: 768px;
+        width: 100%;
         z-index: 1;
     }
 
     .slide-2{
         height: 447px;
-        width: 768px;
+        width: 100%;
         position: absolute;
         z-index: 1;
     }
 
     .left-iphone{
-        width: 180.85px;
-        height: 363.74px;
-        margin-top: 39px;
-        vertical-align: middle;
-        margin-left: 112px;
+        transform: scale(0.75);
+        left: 10%;
+        top: -4%;
         position: absolute;
     }
 
     .right-iphone{
-        width: 364.21px;
-        height: 180.93px;
+        transform: scale(0.75);
+        top: 25%;
+        right: 1%;
         position: absolute;
-        vertical-align: middle;
-        margin-left: 317px;
-        margin-top: 131px;
     }
 
-    .offscreen-left{
-        width: 180.85px;
-        height: 363.74px;
-        margin-top: 39px;
-        vertical-align: middle;
-        margin-left: 110px;
+    .offscreen-left{    
+        transform: scale(0.75); 
+        left: 10%;
+        top: -4%;
         position: absolute;
     }
 
     .offscreen-right{
-        width: 364.21px;
-        height: 180.93px;
+        transform: scale(0.75);
+        top: 25%;
         position: absolute;
-        vertical-align: middle;
-        margin-left: 316px;
-        margin-top: 131px;
+        right: 1%;
     }
 
     .iphones{
-        width: 768px;
+        width: 100%;
         height: 447px;
     }
 
@@ -223,23 +225,26 @@
         transform: scale(1.5);
     }
 
+    .offscreen{
+        display: none;
+    }
+
     @keyframes bounce-1 {
-        0%   { transform: translateX(+768PX); }
+        0%   { transform: translateX(+1020PX); }
         100%  { transform: translateX(0); }
     }
 
     @keyframes bounce-2 {
-        0%   { transform: translateX(-768PX); }
+        0%   { transform: translateX(-1020PX); }
         100%  { transform: translateX(0); }
     }
 
     .services{
         height: 571px;
         background-color: #f2f2f2;
-        width: 687px;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-bottom: 64px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 64px;
     }
 
     .container-services{
@@ -323,7 +328,6 @@
 
     .portfolio{
         height: 1060px;
-        width: 768px;
         background-color: #2d303a;
         border-bottom: 6px solid #323746;
         margin: auto;
@@ -333,8 +337,8 @@
     .portfolio-container{
         height: inherit;
         background-color: #2d303a;
-        margin-left: 40px;
-        margin-right: 40px;   
+        margin-left: 5%;
+        margin-right: 3%;
     }
 
     .portfolio-headline{
@@ -418,9 +422,8 @@
 
     .about-us{
         height: 542px;
-        width: 688px;
         background-color: #f2f2f2;
-        margin: 52px 40px 75px;
+        padding: 52px 40px 75px;
     }
 
     .about-us-container{
@@ -510,7 +513,6 @@
 
     .get-a-quote{
         height: 631px;
-        width: 768px;
         background-color: #f06c64;
         border-bottom: 6px solid #ea676b;
         margin: auto;
@@ -546,7 +548,6 @@
 
     .layout-2-column{
         height: 431px;
-        width: 688px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -555,7 +556,7 @@
     }
 
     .form{
-        width: 60%;
+        width: 65%;
         height: 309px;
     }
 
@@ -567,7 +568,7 @@
     textarea,
     form button {
     padding: 12px 15px;
-    width: 442px;
+    width: 100%;
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
     border: none;
