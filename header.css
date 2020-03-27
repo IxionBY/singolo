@@ -306,7 +306,7 @@
             visibility: hidden;
             top: 0;
             left: -100%;
-            width: 279px;
+            width: 238px;
             height: 100%;
             margin: 0;
             padding: 232px 0 0 41px;
@@ -367,6 +367,7 @@
             background-color: #000;
             position: fixed;
             top: 0;
+            right: 0;
             display: none;
         }
     }
