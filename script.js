@@ -33,7 +33,22 @@ function onScroll(event){
 MENU.addEventListener('click', (event) => {
     MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
+    document.getElementById('menu__toggle').checked = false;
+    document.querySelector('.logo').classList.remove('innactive');
+    
 });
+
+
+//hide logo 375px
+
+let menuBtn = document.querySelector('.menu__btn');
+
+menuBtn.addEventListener('click', function(){
+    if (document.querySelector('.logo').classList.contains('innactive')){
+        document.querySelector('.logo').classList.remove('innactive');
+    } else document.querySelector('.logo').classList.add('innactive');
+});
+
 
 //offscreen
 LEFT_IPHONE.addEventListener('click', function() {
@@ -157,16 +172,3 @@ function onScrollRight(event){
     ActiveElement.classList.remove('activeElement')
     },500)
 }
-
-
-//hide logo 375px
-menuBtn.addEventListener('click', checked);
-
-function checked() {
-    if (document.getElementById("menu__toggle").checked = true{
-        document.querySelector('.logo').classList.add('innactive');
-    } else {
-        document.querySelector('.logo').classList.remove('innactive');
-    };
-}
-let menuBtn = document.querySelector('.menu__btn');
