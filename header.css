@@ -392,7 +392,7 @@
         }
 
         .nav-logo{
-            transition-duration: .25s;
+            transition-duration: .4s;
         }
     
         .navigation-link.active{
@@ -428,5 +428,9 @@
             right: calc(279px - 100%);
             transition: right 0.25s cubic-bezier(1, 0, 0, 1);
             visibility: hidden;
+        }
+
+        .innactive{
+            display: none;
         }
     }

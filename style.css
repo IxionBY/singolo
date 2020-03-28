@@ -76,6 +76,10 @@
         margin: 0px;
     }
 
+    #menu__toggle {
+        display: none;
+    }
+
     .header-navigation li{
         display: inline-block;
         padding-left: 30px;
@@ -105,6 +109,20 @@
     .navigation-link:hover{
         cursor: pointer;
         color: #f06c64;
+    }
+
+    .nav-logo{
+        text-transform: uppercase;
+        position: absolute;
+        width: 92px;
+        height: 24px;
+        left: 71px;
+        top: 24px;  
+        font-family: 'Lato-bold';   
+        font-size: 19.6875px;
+        line-height: 24px;
+        letter-spacing: -0.03em;
+        visibility: hidden;
     }
 
     .slider{

@@ -159,4 +159,14 @@ function onScrollRight(event){
 }
 
 
-//overlay 375px
+//hide logo 375px
+menuBtn.addEventListener('click', checked);
+
+function checked() {
+    if (document.getElementById("menu__toggle").checked = true{
+        document.querySelector('.logo').classList.add('innactive');
+    } else {
+        document.querySelector('.logo').classList.remove('innactive');
+    };
+}
+let menuBtn = document.querySelector('.menu__btn');
