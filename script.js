@@ -157,3 +157,6 @@ function onScrollRight(event){
     ActiveElement.classList.remove('activeElement')
     },500)
 }
+
+
+//overlay 375px
