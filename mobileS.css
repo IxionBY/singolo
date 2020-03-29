@@ -760,8 +760,8 @@
         max-width: 250px;
         padding: 10px 10px;
         background-color: #f06c64;
-        top: 25%;
-        left: 15%;
+        top: 32%;
+        left: 8%;
         border: 2px solid #d6564f;
         border-radius: 5px;
         text-align: left;
@@ -794,7 +794,7 @@
         width: 100px;
         height: 30px;
         margin-top: 40px;
-        margin-left: 30%;
+        margin-left: 29%;
     }
 
     .get-a-quote-form-content{
@@ -839,7 +839,7 @@
     }
 
     .small-phone{
-    padding-left: 1px;
+        padding-left: 1px;
     }
 
     .contact a{
