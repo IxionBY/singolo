@@ -1,2 +1,1 @@
-# singolo
-singolo
+https://ixionby.github.io/singolo/
