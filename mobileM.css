@@ -183,7 +183,6 @@
 
     .navigation-link:hover{
         cursor: pointer;
-        color: #f06c64;
     }
 
     .nav-logo{
@@ -751,6 +750,7 @@
         top: 0;
         left: 0;
         background: #0008;
+        z-index: 4;
     }
     
     #message-block.hidden {
@@ -769,6 +769,7 @@
         border-radius: 5px;
         text-align: left;
         word-break: break-all;
+        z-index: 5;
     }
     
     .text-message {
