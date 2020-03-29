@@ -18,9 +18,10 @@
     src: url('assets/fonts/Lato-Black.ttf');
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px){
+@media screen and (max-width: 374px){
+    
     body{
-        max-width: 767px;
+        max-width: 374px;
         margin: 0 auto;
         padding: 0px;
     }
@@ -42,7 +43,7 @@
         background-color: #2d303a;
         border-bottom: 4px solid #323746;
         color: #ffffff;
-        max-width: 767px;
+        max-width: 374px;
         margin: auto;
     }
 
@@ -62,7 +63,6 @@
         text-transform: uppercase;
         letter-spacing: -0.4px;
         font-family: 'Lato-Light', sans-serif;
-        font-weight: 700;
         margin: auto;
     }
 
@@ -217,12 +217,12 @@
     }
 
     #wraper{
-        max-width: 767px;
+        max-width: 374px;
         margin: auto;
     }
 
     .slider{
-        max-width: 767px;
+        max-width: 374px;
         height: 218.38px;
         border-bottom: 4px solid #ea676b;
         position: relative;
@@ -231,7 +231,7 @@
     .container-slider{
         overflow: hidden;
         height: 218.38px;
-        max-width: 767px;
+        max-width: 374px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -279,19 +279,19 @@
     .left-iphone{
         transform: scale(0.3);
         margin-top: -64%;
-        margin-left: -62%;
+        margin-left: -54%;
         position: absolute;
     }
 
     .right-iphone{
         transform: scale(0.3);
-        margin-left: -42%;
+        margin-left: -47%;
         position: absolute;
     }
 
     .offscreen-left{    
         transform: scale(0.3);
-        margin-left: -62%;
+        margin-left: -54%;
         margin-top: -64%;
         position: absolute;
     }
@@ -299,7 +299,7 @@
     .offscreen-right{
         transform: scale(0.3);
         position: absolute;
-        margin-left: -42%;
+        margin-left: -47%;
     }
 
     .iphones{
@@ -416,16 +416,13 @@
     .headline-description{
         font-size: 12px;
         line-height: 22px;
-        width: 220px;
+        width: 150px;
         margin-left: 82px;
         color: #767e9e;
         font-family: "Lato-Bold";
         text-align: justify;
         letter-spacing: -0.2px;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
+        overflow: hidden; 
     }
 
     .portfolio{
@@ -486,7 +483,7 @@
         text-align: justify;
         height: 22px;
         font-family: 'Lato', sans-serif;
-        font-size: 12px;
+        font-size: 9px;
     }
 
     .portfolio-nav-button.active{
